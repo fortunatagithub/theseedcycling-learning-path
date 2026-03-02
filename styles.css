@@ -610,6 +610,70 @@ main {
   margin-bottom: 1.25rem;
 }
 
+/* ── Prereq section ── */
+.prereq-section {
+  margin-bottom: 1.5rem;
+}
+.prereq-section h3 {
+  font-family: 'Jost', sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--tierra);
+  margin-bottom: .875rem;
+}
+.prereq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .625rem;
+}
+@media (min-width: 560px) {
+  .prereq-grid { grid-template-columns: 1fr 1fr; }
+}
+.prereq-card {
+  display: flex;
+  gap: .75rem;
+  background: var(--crema);
+  border: 1px solid var(--gris-claro);
+  border-radius: .75rem;
+  padding: .875rem 1rem;
+}
+.prereq-highlight {
+  border-color: var(--arcilla);
+  background: #fdf6f2;
+  grid-column: 1 / -1;
+}
+.prereq-num {
+  flex-shrink: 0;
+  width: 1.5rem; height: 1.5rem;
+  border-radius: 50%;
+  background: var(--arcilla);
+  color: var(--blanco);
+  font-size: .75rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Jost', sans-serif;
+  margin-top: .1rem;
+}
+.prereq-card strong { font-size: .875rem; color: var(--marron); display: block; margin-bottom: .35rem; }
+.prereq-body p, .prereq-body ul { font-size: .82rem; color: var(--gris); margin: 0; }
+.prereq-body ul { padding-left: 1.1rem; }
+.prereq-body li { margin-bottom: .2rem; }
+.prereq-body a { color: var(--arcilla); }
+.prereq-prompt {
+  margin-top: .5rem;
+  background: var(--blanco);
+  border: 1px solid var(--arcilla);
+  border-radius: .5rem;
+  padding: .6rem .75rem;
+  font-size: .78rem;
+  color: var(--marron);
+  font-family: monospace;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
 .intro-cols {
   display: grid;
   grid-template-columns: 1fr;
