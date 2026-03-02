@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Seed Cycling — Learning Path</title>
+  <meta name="description" content="Ruta de aprendizaje digital de 5 semanas para The Seed Cycling — empezamos desde cero: logo, packaging y marca antes del primer post." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="progress-bar-container"><div id="progress-bar"></div></div>
+<div id="toast"></div>
+
+<!-- ══════════ HEADER ══════════ -->
+<header>
+  <p class="brand-eyebrow">The Seed Cycling · Mendoza</p>
+  <h1>Learning Path<br><em>de la idea al primer cliente — 5 semanas, paso a paso</em></h1>
+  <p>Valeria, acá vas a encontrar tu ruta de aprendizaje completa — empezamos desde cero: primero la marca, después el setup digital y el contenido. Marcá cada paso a medida que avanzás.</p>
+  <div class="progress-summary">
+    <span id="progress-counter">0/20</span> pasos completados &nbsp;·&nbsp; <span id="progress-pct">0%</span>
+    &nbsp;·&nbsp; <button class="btn-reset" onclick="resetProgress()">Resetear progreso</button>
+  </div>
+</header>
+
+<!-- ══════════ MAIN ══════════ -->
+<main>
+
+  <!-- ── Intro (siempre visible, encima de las pestañas) ── -->
+  <section class="intro-section">
+    <h2>¿Qué es esto y cómo usarlo?</h2>
+    <p class="subtitle">Leé esto primero — lleva 2 minutos y te ahorra confusión.</p>
+    <p class="intro-lead">
+      Tu hoja de ruta para lanzar The Seed Cycling desde cero — sin logo, sin packaging, sin nada todavía. <strong>5 semanas, 20 pasos</strong>: cada uno tiene recursos, instrucciones y un prompt de Claude listo para copiar. Navegá por las pestañas de abajo para ir semana a semana.
+    </p>
+
+    <div class="intro-cols">
+      <div class="intro-col">
+        <h3>Cómo usarlo</h3>
+        <ol>
+          <li>Usá las pestañas de abajo para ir a cada semana</li>
+          <li>Trabajá los pasos <strong>en orden</strong> — cada semana se apoya en la anterior</li>
+          <li>Hacé click en el botón <strong>✓</strong> cuando terminés un paso</li>
+          <li>Si hay un bloque naranja, copiá el prompt y pegalo en Claude Code</li>
+          <li>La barra de progreso arriba se actualiza sola</li>
+          <li>Mili ve tu avance en tiempo real desde su browser</li>
+        </ol>
+      </div>
+      <div class="intro-col">
+        <h3>Qué vas a tener al terminar</h3>
+        <div class="result-week">
+          <span class="result-week-badge">S1</span>
+          <div class="result-week-text"><strong>Identidad visual completa</strong>Brief de marca · Logo PNG + SVG · Kit de marca · Packaging · Mockups</div>
+        </div>
+        <div class="result-week">
+          <span class="result-week-badge">S2</span>
+          <div class="result-week-text"><strong>Setup digital listo</strong>GitHub · Carpetas · Tienda Nube · Dominio .com.ar</div>
+        </div>
+        <div class="result-week">
+          <span class="result-week-badge">S3</span>
+          <div class="result-week-text"><strong>Primer contenido producido</strong>5 fotos editadas · Carrusel · Reel exportado · Imágenes optimizadas</div>
+        </div>
+        <div class="result-week">
+          <span class="result-week-badge">S4</span>
+          <div class="result-week-text"><strong>Redes activas</strong>Perfil IG completo · Primer post programado · Banco de copies</div>
+        </div>
+        <div class="result-week">
+          <span class="result-week-badge">S5</span>
+          <div class="result-week-text"><strong>Maquina de ventas encendida</strong>Lista de espera · WhatsApp Business · Calendario · Metricas semanales</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tab navigation ── -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="semana1">Semana 1 · Marca</button>
+    <button class="tab-btn" data-tab="semana2">Semana 2 · Setup</button>
+    <button class="tab-btn" data-tab="semana3">Semana 3 · Contenido</button>
+    <button class="tab-btn" data-tab="semana4">Semana 4 · Redes</button>
+    <button class="tab-btn" data-tab="semana5">Semana 5 · Ventas</button>
+    <button class="tab-btn" data-tab="checklist">Checklist</button>
+    <button class="tab-btn" data-tab="fuentes">Fuentes</button>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: SEMANA 1 — Identidad de Marca desde Cero
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel active" id="tab-semana1">
+  <section class="week-section">
+    <div class="week-header">
+      <span class="week-badge">Semana 1</span>
+      <h2 class="week-title">Identidad de Marca desde Cero</h2>
+    </div>
+
+    <article class="step-card" data-step-id="step_1">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <div class="step-meta">
+          <div class="step-title">Brief de marca — nombre, valores, personalidad</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a hacer?</h4>
+        <p>Definir la identidad de marca en un documento base: nombre final, valores, arquetipo, personalidad y tono de voz. Este brief es la brújula de todas las decisiones de diseño y comunicación que siguen.</p>
+        <h4>Entregable</h4>
+        <p>Archivo <code>assets-marca/brief-de-marca.md</code></p>
+        <span class="kr-tag">KR1.2 — Branding completo</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria, PM de The Seed Cycling — marca de suplementos hormonales naturales en Mendoza, Argentina.
+
+Necesito que me generes el Brief de Marca completo. Te doy el contexto:
+
+PRODUCTOS:
+- Combo 1 (Fase Folicular): Semillas de Lino + Zapallo
+- Combo 2 (Fase Lútea): Semillas de Sésamo + Girasol
+- Formato: kit con 2 sobres kraft por combo
+
+CLIENTE IDEAL (ICP):
+Mujer, 25-42 años, Argentina, interesada en bienestar hormonal natural, activa en Instagram, sigue marcas como Manskis Wellness o BEEYA.
+
+REFERENCIAS:
+- BEEYA (USA): minimalista, blanco + serif, educativa y científica
+- Manskis Wellness (UK): orgánica, terrosa, community-driven, 264K IG
+
+LO QUE NO ES LA MARCA:
+- No farmacéutica / no clínica
+- No "rosa chicle" / no ultra-femenina
+- No hace claims médicos (restricción ANMAT)
+
+Por favor generame el brief con:
+1. Nombre y tagline provisional
+2. Propuesta de valor (1 párrafo)
+3. Valores de marca (5-6 valores)
+4. Arquetipo de marca
+5. Personalidad (3-5 adjetivos clave)
+6. Tono de voz (con ejemplos "dentro / fuera de la marca")
+7. ICP detallado con pain points y motivaciones
+8. Posicionamiento frente a competencia
+9. Lo que la marca NO es
+
+Formato: Markdown limpio para guardar como assets-marca/brief-de-marca.md</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_2">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <div class="step-meta">
+          <div class="step-title">Logo e identidad visual con IA</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Ideogram.ai + Canva</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a hacer?</h4>
+        <p>Usar Ideogram.ai (gratis, 25 prompts/día, excelente para texto en logos) para generar 3-5 opciones visuales, elegir la mejor, y refinarla en Canva. Ideogram funciona mejor en inglés — Claude te genera los prompts listos.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.teleprompterpad.com/blog/ideogram-tutorial" target="_blank" rel="noopener">▶ Tutorial Ideogram en español (TeleprompterPad)</a></p>
+        <h4>Flujo</h4>
+        <ul>
+          <li>Ir a <a href="https://ideogram.ai" target="_blank" rel="noopener">ideogram.ai</a> y crear cuenta gratuita</li>
+          <li>Pegar los 3 prompts que genera Claude (ver abajo)</li>
+          <li>Generar variaciones → elegir la que más representa la marca</li>
+          <li>Descargar → abrir en Canva para refinar y exportar</li>
+        </ul>
+        <h4>Alternativas gratis</h4>
+        <ul>
+          <li><a href="https://logo.com" target="_blank" rel="noopener">Logo.com</a> · PixNova AI (sin login) · Looka</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Logo en PNG transparente + SVG en <code>assets-marca/logo/</code></p>
+        <span class="kr-tag">KR1.2 — Branding completo</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Generá los prompts con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Necesito 3 prompts en inglés para generar opciones de logo en Ideogram.ai.
+
+La marca: kits de semillas naturales para apoyo hormonal femenino.
+Estética: orgánica, elegante, minimalista.
+Paleta: arcilla (#C4785A), crema (#F5EFE0), verde salvia (#8DAF7A), tierra (#6B4C35).
+Tipografías de referencia: Cormorant Garamond, Jost.
+
+Por favor generame:
+
+PROMPT 1 — Estilo minimalista serif (solo tipografía, sin ícono):
+[prompt listo en inglés para pegar en Ideogram]
+
+PROMPT 2 — Estilo orgánico con elemento botánico (semilla, hoja, ciclo lunar):
+[prompt listo en inglés para pegar en Ideogram]
+
+PROMPT 3 — Estilo sello artesanal (stamp / badge circular):
+[prompt listo en inglés para pegar en Ideogram]
+
+Después de elegir la opción, indicame:
+1. Cómo descargar en máxima resolución desde Ideogram
+2. Cómo abrir en Canva para limpiar fondo y exportar en PNG transparente y SVG
+3. Cómo organizar en assets-marca/logo/ (nombres recomendados)</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_3">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <div class="step-meta">
+          <div class="step-title">Kit de Marca completo en Canva</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Canva</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a hacer?</h4>
+        <p>Con el logo del paso anterior, armar el kit de marca completo: paleta definitiva, tipografías, templates base para IG y una guía de marca de 1 página en PDF.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://lola-digital.com/kit-de-marca-canva" target="_blank" rel="noopener">▶ Kit de marca en Canva — mega guía 2024 (Lola Digital)</a></p>
+        <h4>Paleta de The Seed Cycling</h4>
+        <ul>
+          <li><strong>Arcilla:</strong> #C4785A — terracota suave, color principal</li>
+          <li><strong>Crema:</strong> #F5EFE0 — fondo de diseños</li>
+          <li><strong>Verde salvia:</strong> #8DAF7A — acento secundario</li>
+          <li><strong>Tierra:</strong> #6B4C35 — texto oscuro</li>
+        </ul>
+        <h4>Tipografías</h4>
+        <ul>
+          <li>Títulos: <strong>Cormorant Garamond</strong> (serif elegante)</li>
+          <li>Cuerpo: <strong>Jost</strong> o <strong>Montserrat Light</strong></li>
+        </ul>
+        <h4>Nota Canva Free vs Pro</h4>
+        <p>Canva Free permite 1 kit con 3 colores. Para la paleta completa buscá "Canva for Education" — es 100% gratuito con email universitario. También podés pedirle a Mili acceso al equipo.</p>
+        <h4>Entregable</h4>
+        <p>Brand kit activo en Canva + <code>assets-marca/guia-de-marca.pdf</code> exportado</p>
+        <span class="kr-tag">KR1.2 — Branding completo (se considera cumplido al terminar este paso)</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_4">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <div class="step-meta">
+          <div class="step-title">Packaging del Combo 1 y Combo 2</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Canva + Ideogram</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a hacer?</h4>
+        <p>Diseñar las etiquetas de los sobres kraft. Formato recomendado para el primer lote: etiqueta autoadhesiva en hoja A4 — económico, imprimible en casa o imprenta digital. 3 opciones por combo antes de hablar con el proveedor.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.shopify.com/es/blog/diseno-de-packaging" target="_blank" rel="noopener">▶ Diseño de packaging para productos físicos (Shopify Blog)</a></p>
+        <p><a href="https://www.pacdora.com" target="_blank" rel="noopener">▶ Pacdora.com — AI packaging design</a></p>
+        <h4>Checklist ANMAT — elementos obligatorios</h4>
+        <ul>
+          <li>✔ Nombre del producto</li>
+          <li>✔ Lista de ingredientes (orden decreciente por peso)</li>
+          <li>✔ Cantidad neta (en gramos)</li>
+          <li>✔ Nombre y dirección del elaborador / responsable</li>
+          <li>✔ RNPA — o <em>"RNPA en trámite"</em> si aún no se obtuvo</li>
+          <li>✔ Modo de empleo / instrucciones de uso</li>
+          <li>✔ Condiciones de conservación</li>
+          <li>✔ Fecha de vencimiento (a completar en imprenta)</li>
+          <li>✔ País de origen: <em>Industria Argentina</em></li>
+          <li>✔ Sin claims médicos — no escribir "cura", "trata" ni "previene"</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>3 opciones de packaging × 2 combos en <code>assets-marca/packaging/</code></p>
+        <span class="kr-tag">KR1.2 — Branding completo</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Necesito diseñar el packaging para los dos combos.
+
+PRODUCTOS:
+- Combo 1 — Kit Fase Folicular: Lino + Zapallo
+- Combo 2 — Kit Fase Lútea: Sésamo + Girasol
+- Formato: sobre kraft con etiqueta autoadhesiva en hoja A4
+
+Por favor generame:
+
+1. BRIEF DE PACKAGING para diseñar en Canva:
+   - Dimensiones recomendadas para la etiqueta (frente + dorso del sobre)
+   - Estructura: qué información va en cada zona
+   - Elementos visuales de la guía de marca (arcilla, crema, Cormorant)
+   - Cómo diferenciar Combo 1 de Combo 2 sin romper coherencia
+
+2. CHECKLIST ANMAT completo de elementos obligatorios para alimentos/suplementos en Argentina
+   (con nota sobre qué poner si el RNPA está en trámite)
+
+3. PROMPT IDEOGRAM en inglés para visualizar el estilo del packaging
+   (sobre kraft artesanal, estética wellness orgánica, paleta arcilla y crema)
+
+Formato Markdown para guardar en assets-marca/packaging/brief-packaging.md</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_5">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <div class="step-meta">
+          <div class="step-title">Mockups del producto antes de impresión</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Canva Mockups</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a hacer?</h4>
+        <p>Generar mockups fotorealistas del packaging para: mostrarle al proveedor, publicar en IG antes de tener el físico, y validar con Mili antes de imprimir.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.canva.com/mockups/" target="_blank" rel="noopener">▶ Canva Mockups (gratis)</a></p>
+        <h4>Tipos recomendados</h4>
+        <ul>
+          <li><strong>Sobre en mano femenina</strong> — muestra escala real, ideal para IG</li>
+          <li><strong>Flat lay sobre lino o madera</strong> — estética editorial, perfecta para feed</li>
+          <li><strong>Los dos combos juntos</strong> — foto de catálogo / para el proveedor</li>
+          <li><strong>Sobre abierto con semillas</strong> — muestra el contenido real</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>4-6 mockups en 1080×1080 en <code>fotos/mockups/</code>, listos para IG y proveedor</p>
+        <span class="kr-tag">KR1.2 — Branding completo</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. El diseño del packaging está listo. Necesito mockups fotorealistas antes de imprimir.
+
+PRODUCTO: sobre kraft con etiqueta autoadhesiva. Marca: The Seed Cycling.
+OBJETIVO: mostrarle al proveedor, publicar en IG antes del lanzamiento, validar con Mili.
+
+Por favor:
+
+1. LISTA de los mejores tipos de mockup para un producto wellness (sobre kraft):
+   - Nombre del tipo · cuándo usarlo · cómo hacerlo en Canva Mockups (gratis)
+   - Alternativa si Canva no tiene ese estilo (Smart Mockups free, Placeit)
+
+2. PROMPT IDEOGRAM en inglés para imagen fotorealista del kit en contexto de uso:
+   (mano femenina sosteniendo sobre kraft artesanal, luz natural lateral,
+   fondo de lino o madera sin barniz, estética editorial wellness)
+
+3. Instrucciones para exportar en 1080×1080 desde Canva y organizar en fotos/mockups/</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+  </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: SEMANA 2 — Setup Digital
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel" id="tab-semana2">
+  <section class="week-section">
+    <div class="week-header">
+      <span class="week-badge">Semana 2</span>
+      <h2 class="week-title">Setup Digital</h2>
+    </div>
+
+    <article class="step-card" data-step-id="step_6">
+      <div class="step-header">
+        <div class="step-number">6</div>
+        <div class="step-meta">
+          <div class="step-title">Git y GitHub básico</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code + Terminal</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Git guarda el historial de tus proyectos digitales. GitHub es donde los guardás en la nube para que Mili pueda verlos y ayudarte.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.youtube.com/watch?v=3GymExBkKjE" target="_blank" rel="noopener">▶ Git en 15 minutos (Fazt, YouTube)</a></p>
+        <h4>Ejercicio</h4>
+        <ul>
+          <li>Instalar Git desde <a href="https://git-scm.com" target="_blank" rel="noopener">git-scm.com</a></li>
+          <li>Configurar tu nombre y email en Terminal</li>
+          <li>Crear cuenta en GitHub si no tenés</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Terminal muestra tu nombre al correr <code>git config --global user.name</code></p>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria, PM de The Seed Cycling (Mendoza). Necesito configurar Git por primera vez en mi Mac.
+
+Por favor:
+1. Mostrarme qué comandos correr en Terminal para configurar nombre y email en Git
+2. Verificar que la instalación está bien
+3. Crear mi primer repositorio local llamado "theseedcycling-content"
+
+Mi email de GitHub es: [tu email acá]</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+        <div class="claude-block" style="margin-top:.75rem">
+          <div class="claude-block-label">⌘ Push a GitHub</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Quiero subir los cambios que hice hoy a GitHub.
+
+Estoy en ~/Desktop/theseedcycling-content/ y modifiqué algunos archivos.
+
+Por favor guiame para:
+1. Ver qué archivos cambiaron (git status)
+2. Agregar solo los archivos relevantes (no subir fotos pesadas ni temporales)
+3. Crear un commit con un mensaje descriptivo en español
+4. Hacer push al repositorio
+
+¿Hay algo que no debería subir?</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_7">
+      <div class="step-header">
+        <div class="step-number">7</div>
+        <div class="step-meta">
+          <div class="step-title">Estructura de carpetas del proyecto</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Organizar todos los archivos del proyecto (fotos, videos, copies, diseños, assets de marca) en carpetas con nombres claros para encontrar todo rápido.</p>
+        <h4>Entregable</h4>
+        <p>Árbol de carpetas creado y visible en Finder</p>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Necesito crear la estructura de carpetas de mi proyecto de contenido digital en mi Mac.
+
+La marca es de kits de semillas para apoyo hormonal femenino. Contenido incluye: fotos de producto, reels, carruseles, copies, diseños Canva y assets de marca.
+
+Por favor creame la estructura con comandos de Terminal:
+- Raíz: ~/Desktop/theseedcycling-content/
+- Subcarpetas: fotos/, videos/, disenos/, copies/, assets-marca/, publicaciones/
+- Dentro de assets-marca/: logo/, packaging/, mockups/
+- Dentro de fotos/: originales/, exportadas/, mockups/
+- Dentro de publicaciones/: semana-01/, semana-02/, etc.
+- Un README.txt con descripción de cada carpeta
+
+Escribí cada comando que tengo que correr.</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_8">
+      <div class="step-header">
+        <div class="step-number">8</div>
+        <div class="step-meta">
+          <div class="step-title">Tienda Nube — cuenta y página "Próximamente"</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Tienda Nube</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Crear tu tienda online en la plataforma más usada de Argentina. En esta etapa solo activás una página de "Próximamente" para capturar curiosos antes de abrir.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.youtube.com/results?search_query=tienda+nube+crear+cuenta+2024" target="_blank" rel="noopener">▶ Buscar "Tienda Nube crear cuenta" en YouTube</a></p>
+        <h4>Pasos clave</h4>
+        <ul>
+          <li>Crear cuenta en <a href="https://www.tiendanube.com.ar" target="_blank" rel="noopener">tiendanube.com.ar</a></li>
+          <li>Elegir plan gratuito para empezar</li>
+          <li>En Personalización → activar modo "Próximamente"</li>
+          <li>Agregar logo y color de marca (ya los tenés del paso 3)</li>
+          <li>Agregar campo de email para lista de espera</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>URL activa (ej: theseedcycling.mitiendanube.com) con página próximamente visible</p>
+        <span class="kr-tag">KR1.3 — Tienda Nube live</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_9">
+      <div class="step-header">
+        <div class="step-number">9</div>
+        <div class="step-meta">
+          <div class="step-title">Comprar dominio theseedcycling.com.ar</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Nic.ar</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Registrar el dominio .com.ar es lo que da identidad oficial a tu marca en internet. Es tuyo por un año renovable.</p>
+        <h4>Pasos clave</h4>
+        <ul>
+          <li>Ir a <a href="https://nic.ar" target="_blank" rel="noopener">nic.ar</a> y buscar "theseedcycling"</li>
+          <li>Registrarlo con tu CUIL (no lleva IVA adicional)</li>
+          <li>Vincular el dominio a Tienda Nube (Configuración → Dominios)</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Dominio registrado y apuntando a tu Tienda Nube</p>
+        <span class="kr-tag">KR3.3 — Dominio activo</span>
+      </div></div>
+    </article>
+  </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: SEMANA 3 — Producción de Contenido
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel" id="tab-semana3">
+  <section class="week-section">
+    <div class="week-header">
+      <span class="week-badge">Semana 3</span>
+      <h2 class="week-title">Producción de Contenido</h2>
+    </div>
+
+    <article class="step-card" data-step-id="step_10">
+      <div class="step-header">
+        <div class="step-number">10</div>
+        <div class="step-meta">
+          <div class="step-title">Lightroom Mobile — fotos del kit físico</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Lightroom Mobile</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Sacar y editar fotos de los kits físicos con tu celular para que se vean profesionales y consistentes con la estética de la marca.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.youtube.com/results?search_query=lightroom+mobile+tutorial+principiantes+español" target="_blank" rel="noopener">▶ Buscar "Lightroom Mobile tutorial principiantes" en YouTube</a></p>
+        <h4>Setup de la sesión</h4>
+        <ul>
+          <li>Fondo: tela de lino o madera clara natural</li>
+          <li>Luz: natural lateral (ventana sin sol directo)</li>
+          <li>Props: semillas sueltas, hierbas secas, sobre abierto</li>
+          <li>Edición: bajar highlights, subir sombras, temperatura cálida</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>5 fotos editadas exportadas en 1080×1080 para feed</p>
+        <span class="kr-tag">KR1.2 — Assets de marca</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_11">
+      <div class="step-header">
+        <div class="step-number">11</div>
+        <div class="step-meta">
+          <div class="step-title">Primer carrusel completo</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Canva</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Un carrusel de Instagram es una publicación de múltiples imágenes que la gente desliza. Es el formato educativo más efectivo para la marca.</p>
+        <h4>Estructura del carrusel</h4>
+        <ul>
+          <li><strong>Slide 1:</strong> Título gancho (ej: "¿Por qué las semillas regulan tus hormonas?")</li>
+          <li><strong>Slides 2-5:</strong> Un punto por slide, icono + texto breve</li>
+          <li><strong>Slide 6:</strong> CTA + logo The Seed Cycling</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Carrusel de 6 slides exportado en PNG, listo para publicar</p>
+        <span class="kr-tag">KR3.1 — 9 posts en IG</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_12">
+      <div class="step-header">
+        <div class="step-number">12</div>
+        <div class="step-meta">
+          <div class="step-title">Redimensionar + optimizar imágenes</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Cada red social tiene medidas distintas. Con un solo comando generás todas las versiones de una imagen automáticamente.</p>
+        <h4>Formatos necesarios</h4>
+        <ul>
+          <li>Feed cuadrado: 1080×1080 px</li>
+          <li>Stories / Reels: 1080×1920 px</li>
+          <li>Portada de reel: 1080×1350 px</li>
+          <li>Tienda Nube: 800×800 px</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Carpeta <code>fotos/exportadas/</code> con todas las versiones de cada foto</p>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Redimensionar con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Tengo fotos en ~/Desktop/theseedcycling-content/fotos/originales/ y necesito exportarlas en múltiples tamaños.
+
+Por favor generame un script (Python o ImageMagick) que:
+1. Tome todas las JPG y PNG de esa carpeta
+2. Las exporte en:
+   - feed_1080x1080.jpg (crop centrado, sin distorsión)
+   - stories_1080x1920.jpg
+   - reel_cover_1080x1350.jpg
+   - tienda_800x800.jpg
+3. Guarde en fotos/exportadas/[nombre-original]/
+4. No sobrescriba los originales
+
+¿Necesito instalar algo primero?</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+        <div class="claude-block" style="margin-top:.75rem">
+          <div class="claude-block-label">⌘ Optimizar para web</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Mis fotos de producto son muy pesadas (+3 MB) y eso hace lenta la tienda.
+
+Por favor generame un script que:
+1. Comprima todas las JPG en fotos/exportadas/ al 80% de calidad
+2. Que ninguna supere los 300 KB
+3. Guarde las optimizadas en fotos/para-tienda/
+4. Muestre el tamaño antes y después de cada imagen
+
+¿Uso ImageMagick, ffmpeg, o hay una forma más fácil?</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_13">
+      <div class="step-header">
+        <div class="step-number">13</div>
+        <div class="step-meta">
+          <div class="step-title">CapCut — primer reel (guión reel_01)</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>CapCut</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>CapCut es la app más sencilla para editar reels. Con ella armás un reel de 30-60 segundos con texto, música y transiciones.</p>
+        <h4>Recurso</h4>
+        <p><a href="https://www.youtube.com/results?search_query=capcut+tutorial+principiantes+reel+español" target="_blank" rel="noopener">▶ Buscar "CapCut tutorial reel principiantes" en YouTube</a></p>
+        <h4>Estructura del reel_01</h4>
+        <ul>
+          <li><strong>0-3s:</strong> Hook visual (texto grande en pantalla)</li>
+          <li><strong>3-20s:</strong> Clips de producto / proceso / semillas</li>
+          <li><strong>20-30s:</strong> CTA + handle @theseedcycling</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Reel exportado en 1080×1920, sin marca de agua, listo para subir</p>
+        <span class="kr-tag">KR3.1 — 9 posts en IG</span>
+      </div></div>
+    </article>
+  </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: SEMANA 4 — Redes Sociales
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel" id="tab-semana4">
+  <section class="week-section">
+    <div class="week-header">
+      <span class="week-badge">Semana 4</span>
+      <h2 class="week-title">Redes Sociales</h2>
+    </div>
+
+    <article class="step-card" data-step-id="step_14">
+      <div class="step-header">
+        <div class="step-number">14</div>
+        <div class="step-meta">
+          <div class="step-title">Instagram @theseedcycling — perfil completo</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Instagram</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Crear un perfil de Instagram profesional (cuenta de empresa) con toda la información que necesita alguien que llega por primera vez.</p>
+        <h4>Checklist del perfil</h4>
+        <ul>
+          <li>Foto de perfil: logo sobre fondo crema (#F5EFE0)</li>
+          <li>Nombre: The Seed Cycling</li>
+          <li>Handle: @theseedcycling</li>
+          <li>Categoría: Marca de bienestar / Suplementos naturales</li>
+          <li>Bio: 3 líneas — qué es, para quién, qué van a encontrar</li>
+          <li>Link en bio: URL de Tienda Nube o lista de espera</li>
+          <li>Highlights: Qué es / Ingredientes / Testimonios / Pedidos</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Perfil público completo + primer highlight creado</p>
+        <span class="kr-tag">KR3.1 — 9 posts en IG</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_15">
+      <div class="step-header">
+        <div class="step-number">15</div>
+        <div class="step-meta">
+          <div class="step-title">Meta Business Suite — programar primer post</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Meta Business Suite</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Meta Business Suite te permite programar publicaciones, ver métricas, y gestionar Instagram y Facebook desde el mismo lugar.</p>
+        <h4>Pasos clave</h4>
+        <ul>
+          <li>Entrar a <a href="https://business.facebook.com" target="_blank" rel="noopener">business.facebook.com</a></li>
+          <li>Conectar tu cuenta de Instagram @theseedcycling</li>
+          <li>Crear publicación → cargar el carrusel del paso 11</li>
+          <li>Escribir el caption (del banco de contenido)</li>
+          <li>Programar para martes o jueves a las 19:00 hs</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Primer post programado con fecha y hora confirmadas en el calendario de Meta</p>
+        <span class="kr-tag">KR3.1 — 9 posts en IG</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_16">
+      <div class="step-header">
+        <div class="step-number">16</div>
+        <div class="step-meta">
+          <div class="step-title">Generar variaciones de copy para posts</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>En lugar de escribir cada caption desde cero, le das a Claude el contexto de la marca y un tema, y te genera 5 opciones para elegir la mejor.</p>
+        <h4>Entregable</h4>
+        <p>5 captions por publicación en <code>copies/post-[nombre].txt</code></p>
+        <span class="kr-tag">KR3.1 — 9 posts en IG</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria, PM de The Seed Cycling (Mendoza, Argentina). Vendemos kits de semillas naturales para apoyo del ciclo hormonal femenino — wellness natural, no farmacéutico.
+
+Voz de marca: cálida, cercana, educativa sin ser médica. Usamos "vos" y tuteamos en castellano rioplatense.
+
+Necesito 5 variaciones de caption para Instagram sobre:
+[DESCRIBÍ ACÁ EL TEMA — ej: "las semillas de lino en la fase folicular"]
+
+Para cada variación:
+- Hook (primera línea, máximo 125 caracteres)
+- Cuerpo (2-3 párrafos cortos)
+- CTA (llamado a la acción)
+- 5 hashtags en español
+
+Tono: informativo + empático. Sin promesas médicas.</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+  </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: SEMANA 5 — Lista de Espera y Métricas
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel" id="tab-semana5">
+  <section class="week-section">
+    <div class="week-header">
+      <span class="week-badge">Semana 5</span>
+      <h2 class="week-title">Lista de Espera y Métricas</h2>
+    </div>
+
+    <article class="step-card" data-step-id="step_17">
+      <div class="step-header">
+        <div class="step-number">17</div>
+        <div class="step-meta">
+          <div class="step-title">Tienda Nube — formulario lista de espera activo</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Tienda Nube</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Activar el formulario de lista de espera en tu Tienda Nube para capturar emails de personas interesadas antes de abrir oficialmente.</p>
+        <h4>Pasos clave</h4>
+        <ul>
+          <li>En Tienda Nube: Personalización → Próximamente → activar formulario</li>
+          <li>Texto: "Anotate para ser la primera en conocer nuestro lanzamiento"</li>
+          <li>Conectar con Mailchimp o exportar CSV manual</li>
+          <li>Configurar email de confirmación automática</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Formulario activo y primer email de prueba recibido</p>
+        <span class="kr-tag">KR2.1 — 150 emails en lista</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_18">
+      <div class="step-header">
+        <div class="step-number">18</div>
+        <div class="step-meta">
+          <div class="step-title">WhatsApp Business — catálogo y respuestas automáticas</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>WhatsApp Business</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>WhatsApp Business es gratis y permite catálogo de productos, mensajes automáticos de bienvenida y horario de atención.</p>
+        <h4>Pasos clave</h4>
+        <ul>
+          <li>Instalar WhatsApp Business (app separada)</li>
+          <li>Perfil: nombre, descripción, email, sitio web</li>
+          <li>Catálogo: agregar Kit Fase Folicular y Kit Fase Lútea con fotos y precio</li>
+          <li>Mensaje de bienvenida automático configurado</li>
+          <li>Mensaje ausente con horarios de atención</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Perfil completo, catálogo con 2 productos, mensajes automáticos activos</p>
+        <span class="kr-tag">KR3.2 — WhatsApp Business activo</span>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_19">
+      <div class="step-header">
+        <div class="step-number">19</div>
+        <div class="step-meta">
+          <div class="step-title">Calendario de contenido (CSV exportable)</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Un calendario de contenido te permite planificar qué publicar cada día del mes para mantener consistencia sin quedarte sin ideas.</p>
+        <h4>Entregable</h4>
+        <p>Archivo <code>calendario-contenido-mes1.csv</code> con 4 semanas de publicaciones</p>
+        <span class="kr-tag">KR3.1 — 9 posts en IG</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Necesito el calendario de contenido para el primer mes de lanzamiento en Instagram.
+
+Marca: kits de semillas naturales para apoyo hormonal femenino. Público: mujeres 25-40, Argentina, bienestar natural.
+
+Generame un CSV con estas columnas:
+Fecha, Día, Formato (carrusel/reel/foto/story), Tema, Hook sugerido, Caption breve, Hashtags, Estado
+
+Criterios:
+- 3 publicaciones por semana (martes, jueves, sábado)
+- Alternar: carrusel educativo / foto de producto / reel
+- Temas: ciclo + semillas, recetas, testimonios, detrás de escena, FAQ
+- Primera publicación: [ponés la fecha de tu lanzamiento]
+
+Guardalo como: ~/Desktop/theseedcycling-content/copies/calendario-contenido-mes1.csv</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="step-card" data-step-id="step_20">
+      <div class="step-header">
+        <div class="step-number">20</div>
+        <div class="step-meta">
+          <div class="step-title">Reporte de métricas semanal automatizado</div>
+          <div class="step-tool"><span class="step-tool-dot"></span>Claude Code</div>
+        </div>
+        <div class="step-actions">
+          <button class="btn-check" title="Marcar como completado">✓</button>
+          <span class="step-expand-icon">▾</span>
+        </div>
+      </div>
+      <div class="step-body"><div class="step-body-inner">
+        <h4>¿Qué vas a aprender?</h4>
+        <p>Cada semana registrás tus métricas clave y Claude te genera un resumen con recomendaciones para la semana siguiente.</p>
+        <h4>Métricas a trackear</h4>
+        <ul>
+          <li>Seguidores IG (inicio y fin de semana)</li>
+          <li>Alcance total y por publicación</li>
+          <li>Visitas a Tienda Nube</li>
+          <li>Emails capturados en lista de espera</li>
+          <li>Mensajes de WhatsApp recibidos</li>
+          <li>Ventas (cuando aplique)</li>
+        </ul>
+        <h4>Entregable</h4>
+        <p>Tabla + análisis guardado en <code>reportes/semana-01.md</code></p>
+        <span class="kr-tag">KR2.2 — Métricas activas</span>
+        <div class="claude-block">
+          <div class="claude-block-label">⌘ Hacelo con Claude Code</div>
+          <pre class="claude-prompt">Soy Valeria de The Seed Cycling. Te paso las métricas de esta semana:
+
+SEMANA: [número]
+PERÍODO: [fecha inicio] al [fecha fin]
+
+INSTAGRAM:
+- Seguidores al inicio: [número]
+- Seguidores al final: [número]
+- Publicaciones hechas: [número]
+- Alcance total: [número]
+- Post con más alcance: [describilo]
+
+TIENDA NUBE:
+- Visitas totales: [número]
+- Emails capturados: [número] nuevos / [número] total
+
+WHATSAPP:
+- Consultas recibidas: [número]
+
+Por favor generame:
+1. Tabla resumen con variación respecto a semana anterior
+2. 3 observaciones clave de la semana
+3. 3 recomendaciones concretas para la siguiente
+4. En formato Markdown para guardar en reportes/</pre>
+          <button class="btn-copy">Copiar prompt</button>
+        </div>
+      </div></div>
+    </article>
+  </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: CHECKLIST
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel" id="tab-checklist">
+
+    <section class="checklist-section">
+      <h2>Checklist de Lanzamiento</h2>
+      <p class="subtitle">Todo lo que tiene que estar listo antes del primer post y la primera venta</p>
+
+      <div class="checklist-item"><input type="checkbox" id="cl_1" /><label for="cl_1">Proveedor formalizado con contrato o acuerdo escrito <span class="kr">(KR1.1)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_2" /><label for="cl_2">Branding completo — logo, paleta, guía de marca <span class="kr">(KR1.2)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_11" /><label for="cl_11">Logo definitivo elegido y guardado en PNG + SVG <span class="kr">(KR1.2)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_12" /><label for="cl_12">Packaging Combo 1 y Combo 2 aprobados por proveedor <span class="kr">(KR1.2)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_3" /><label for="cl_3">Tienda Nube live con Mercado Pago integrado <span class="kr">(KR1.3)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_4" /><label for="cl_4">Primer lote de 500 unidades recibido <span class="kr">(KR1.4)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_5" /><label for="cl_5">Lista de espera con ≥ 150 emails registrados <span class="kr">(KR2.1)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_6" /><label for="cl_6">Instagram @theseedcycling con 9 posts publicados <span class="kr">(KR3.1)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_7" /><label for="cl_7">WhatsApp Business activo con catálogo y mensajes automáticos <span class="kr">(KR3.2)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_8" /><label for="cl_8">Dominio theseedcycling.com.ar activo y apuntando a la tienda <span class="kr">(KR3.3)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_9" /><label for="cl_9">Trámite RNPA iniciado ante ANMAT <span class="kr">(KR4.3)</span></label></div>
+      <div class="checklist-item"><input type="checkbox" id="cl_10" /><label for="cl_10">Capital remanente ≥ ARS 500.000 en caja/cuenta <span class="kr">(KR4.2)</span></label></div>
+    </section>
+
+    <section class="kit-section">
+      <h2>El Universo Visual de la Marca</h2>
+      <p class="subtitle">Referencia estética para el logo, el packaging, la sesión de fotos y el feed</p>
+      <div class="kit-grid">
+
+        <div class="kit-card">
+          <h3>El packaging</h3>
+          <ul>
+            <li>Formato: sobre kraft con etiqueta autoadhesiva impresa en A4</li>
+            <li>Frente: logo + nombre del combo + ícono botánico</li>
+            <li>Dorso: ingredientes, modo de uso, RNPA, fecha de vencimiento</li>
+            <li>Diferenciador Combo 1 vs Combo 2: color de acento o tipografía del número</li>
+            <li>Estética: artesanal pero prolija — no casero, no industrial</li>
+          </ul>
+        </div>
+
+        <div class="kit-card">
+          <div class="kit-visual">
+            <div class="kit-visual-mock kit-product-shot">
+              <span style="font-family:'Cormorant Garamond',serif;color:#6B4C35;font-size:.9rem;text-align:center;padding:1rem;line-height:1.4">fondo lino<br>luz natural<br>semillas sueltas</span>
+            </div>
+          </div>
+          <h3>Product shot</h3>
+          <ul>
+            <li>Fondo: tela de lino crudo o madera clara sin barniz</li>
+            <li>Luz: natural lateral, difusa (sin flash)</li>
+            <li>Props: semillas desbordando, ramas secas, sobre kraft abierto</li>
+            <li>Paleta: cálida, desaturada — mismo rango que #C4785A y #F5EFE0</li>
+          </ul>
+        </div>
+
+        <div class="kit-card">
+          <div class="kit-visual">
+            <div class="kit-visual-mock kit-feed-grid">
+              <div></div><div></div><div style="background:#8DAF7A;opacity:.5"></div>
+              <div style="background:#F5EFE0"></div><div></div><div></div>
+              <div></div><div style="background:#C4785A;opacity:.4"></div><div></div>
+            </div>
+          </div>
+          <h3>Grilla del feed</h3>
+          <ul>
+            <li>Alternar: carrusel edu / foto producto / reel / quote</li>
+            <li>Paleta consistente en todas las publicaciones</li>
+            <li>Cormorant para títulos, Jost para subtítulos</li>
+            <li>Referencia: BEEYA (blanco + serif), Manskis (orgánico terroso)</li>
+          </ul>
+        </div>
+
+        <div class="kit-card">
+          <h3>Lo que SÍ</h3>
+          <ul>
+            <li>Texturas naturales: lino, madera, piedra, papel kraft</li>
+            <li>Plantas, hierbas y flores secas como props</li>
+            <li>Manos femeninas sosteniendo el producto</li>
+            <li>Tipografía serif elegante en los diseños</li>
+            <li>Espacios con aire, sin saturar la composición</li>
+          </ul>
+        </div>
+
+        <div class="kit-card">
+          <h3>Lo que NO</h3>
+          <ul>
+            <li>Fondos negros o neón</li>
+            <li>Estética farmacéutica o clínica</li>
+            <li>Fotos de cápsulas, pastillas o jeringuillas</li>
+            <li>Tipografías condensadas o muy decorativas</li>
+            <li>Más de 4 colores en un mismo diseño</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       TAB: FUENTES
+  ══════════════════════════════════════════════════════════ -->
+  <div class="tab-panel" id="tab-fuentes">
+  <section class="fuentes-section">
+    <h2>Fuentes en Notion</h2>
+    <p class="subtitle">Si necesitás consultar información del proyecto mientras trabajás, acá están los accesos directos</p>
+
+    <div class="fuentes-grid">
+
+      <a href="https://www.notion.so/3169c514c35e818c9ce8f6c5b11431bb" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">🚀</span>
+        <div class="fuente-body"><h3>START HERE — Guía de Valeria</h3><p>Tu entrada al proyecto. Rol como PM, rutina diaria y documentos clave. Empezá siempre acá.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3149c514c35e812aa21ff1600b7b40c3" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">✅</span>
+        <div class="fuente-body"><h3>TASKS — Tareas del Proyecto</h3><p>Tareas activas, bloqueadas y por venir. Abrilo todos los días y tildá lo que hiciste.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3169c514c35e811fa2e4eec883cb5ef0" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">🎯</span>
+        <div class="fuente-body"><h3>OKRs Fase 1</h3><p>Objetivos y KRs de los primeros 4 meses. Modelo financiero: costos, precios, break-even.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3149c514c35e81e39455db8da2ba876e" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">🗺️</span>
+        <div class="fuente-body"><h3>Guía Maestra</h3><p>Los 18 pasos del proyecto de inicio a fin — el mapa completo. Consultalo cuando tengas dudas del panorama.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3169c514c35e81f08ac0c04bc7ee0d07" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">🏷️</span>
+        <div class="fuente-body"><h3>Naming & Posicionamiento</h3><p>Proceso de naming y decisión final: THE SEED CYCLING. Valores, posicionamiento y voz de marca.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3149c514c35e8171afeff4b184adf8dc" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">🎨</span>
+        <div class="fuente-body"><h3>Brief Visual</h3><p>Brief para el diseñador gráfico. Paleta, referencias visuales y estilo de marca. Listo para entregar.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3149c514c35e81a5bd4cddbc8e513fb5" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">🔍</span>
+        <div class="fuente-body"><h3>Análisis de Mercado</h3><p>BEEYA, Manskis Wellness, Better Diabla y contexto ARG. Análisis competitivo completo.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+      <a href="https://www.notion.so/3149c514c35e8119a1dac3af92b8ef5d" class="fuente-card" target="_blank" rel="noopener">
+        <span class="fuente-icon">📝</span>
+        <div class="fuente-body"><h3>Banco de Contenido</h3><p>Ideas de contenido para IG y TikTok. Inspiración para posts, reels y carruseles.</p></div>
+        <span class="fuente-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+  </div>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <p><strong>The Seed Cycling</strong> · Learning Path app · Hecho con Claude Code + Supabase + Netlify</p>
+  <p style="margin-top:.4rem">Compartido entre Valeria y Mili · Mendoza, Argentina · 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
